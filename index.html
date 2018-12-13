@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <!-- Linking the reset.css -->
+    <link rel="stylesheet" type="text/css" href="">
+    <!-- Adding firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <!-- adding bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Linking the stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../TrainSchedule/assets/css/style.css">
+    <!-- linking jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Linking Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Linking the Javascript file -->
+    <script type="text/javascript" src="../TrainSchedule/assets/javascript/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class=" text-center display-4">Train Schedule</h1>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+
+
+    <!-- Enter a new train-->
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="row-lg-5">
+                <div class="card card-default">
+                    <div class="card-header">
+                        Add a New Train
+                    </div>
+                    <div class="card-body">
+                        <!-- Add new train form-->
+                        <form role="form">
+                            <div class="form-group row">
+                                <label for="name-input">Train Name</label>
+                                <input class="form-control" id="name-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="destination-input">Destination</label>
+                                <input class="form-control" id="destination-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="time-input">First Train Time (Military Time)</label>
+                                <input class="form-control" id="time-input" type="number">
+                            </div>
+                            <div class="form-group row">
+                                <label for="rate-input">Frequency</label>
+                                <input class="form-control" id="frequency-input" type="number">
+                            </div>
+
+
+                            <button class="btn btn-default" id="add-train" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+
+</body>
+
+</html>
